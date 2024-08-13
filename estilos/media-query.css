@@ -15,7 +15,7 @@ Telas muito grandes (grandes laptops e monitores): 1200px para cima;
         background-image: linear-gradient(to top, #EB944B , #ffce7f);
     }
     section#login {
-        width: 90vw;
+        width: 80vw;
     }
 
     section#login > div#imagem {
@@ -50,13 +50,13 @@ Telas muito grandes (grandes laptops e monitores): 1200px para cima;
     section#login > div#formulario {
         float: left;
         width: 50%;
-}
+    }
 
-div#formulario > h1 {
+    div#formulario > h1 {
     font-size: 2em;
     }
 
-div#formulario > p {
+    div#formulario > p {
     font-size: 1.2em;
     }
 }
