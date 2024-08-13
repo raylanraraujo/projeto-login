@@ -30,7 +30,7 @@ main {
     width: 100vw;
 }
 
-section {
+section#login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,6 +41,9 @@ section {
     border-radius: 20px;
     overflow: hidden; /* isso faz com que tudo que estiver fora da seção fique escondido */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
+
+    transition: width .5s, height .5s; /* isso inclui uma animação simples de transição*/
+    transition-timing-function: ease; /* da uma suavizada na transição evitando que aumente e diminua na mesma velocidade */
 }
 
 section#login > div#imagem {
