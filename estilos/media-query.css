@@ -25,7 +25,7 @@ Telas muito grandes (grandes laptops e monitores): 1200px para cima;
     background-position: center bottom;
     }
 
-    section#login > div #formulario {
+    section#login > div#formulario {
         float: right;
         width: 70%;
     }
