@@ -38,15 +38,15 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
+    
     background-color: white;
     width: 260px;
-    height: 500px;
+    height: 530px;
     border-radius: 20px;
     overflow:hidden ; /* isso faz com que tudo que estiver fora da seção fique escondido */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.315);
 
+    transform: translate(-50%, -50%);
     transition: width .5s, height .5s; /* isso inclui uma animação simples de transição*/
     transition-timing-function: ease; /* da uma suavizada na transição evitando que aumente e diminua na mesma velocidade */
 }
@@ -70,12 +70,14 @@ text-align: center;
 
 div#formulario > p {
 font-size: 0.8em;
+margin: 20px 0px;
 }
 
 form > div.campo {
 background-color: #ffce7f;
+border: 2px solid #ffce7f;
 height: 40px;
-border-radius: 5px;
+border-radius: 8px;
 margin: 5px 0px;
 }
 
@@ -83,8 +85,28 @@ div.campo > label {
     display:none;
 }
 
+div.campo > span {
+    color: black;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
 
+div.campo > input {
+    background-color: #ffce7f;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 2px solid #80C3FF;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
 
+div.campo > input:focus-within {
+    background-color: white;
+}
 
 form > input[type=submit] {
     display: block;
